@@ -1,0 +1,14 @@
+      <h1>Twitterのいいね❤を消すやつ</h1>
+      <% if current_user %>
+      <h2><%= link_to '今すぐ❤️を消す', new_task_path %></h2>
+      <% else %>
+      <h2><%= link_to '今すぐ❤を消す', '/auth/twitter' %></h2>
+      <% end %>
+
+      <div class="alert alert-info" style="margin-top: 15%;">
+        <ul class="list-group">
+          <h4 style="margin: 10px;">追加機能予定</h4>
+          <li class="list-group-item">削除対象の日付の指定</li>
+          <li class="list-group-item">特定のユーザーに対してのみのいいねの削除</li>
+        </ul>
+      </div>

@@ -1,0 +1,10 @@
+      <h1>
+        <%= @task.errors.message[:implement][0] if @task.errors.any? %>
+      </h1>
+      <h2>
+        削除するいいね❤の数を1~3000の間で指定してください。
+      </h2>
+      <%= form_for @task, url: {controller: 'tasks', action: 'create'} do |f| %>
+        <%= f.text_field(:implement, maxlength: 4 )%>
+        <%= f.submit '実行' %>
+      <% end %>

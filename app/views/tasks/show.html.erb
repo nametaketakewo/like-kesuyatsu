@@ -1,0 +1,15 @@
+      <h1>💔💔💔💔💔💔💔💔💔💔</h1>
+      <div id='task'>
+        <div class='progress progress-striped active' style='margin:auto 5%;'>
+          <div class='progress-bar progress-bar-info percentage' style='width:0%; color:red;'></div>
+        </div>
+      </div>
+      <div>
+        <ul class='breadcrumb' style='margin:15px auto;'>
+            <li id='caution'>準備中...</li>
+          <li class='link'><%= link_to 'キャンセル', cancel_path, method: :delete %></li>
+        </ul>
+      </div>
+      <script type="text/javascript" charset="utf-8">
+        var task_id = <%= @task.id %>;
+      </script>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  limit: MyString
+  condition: MyString
+  date_from: MyString
+  date_to: MyString
+
+two:
+  limit: MyString
+  condition: MyString
+  date_from: MyString
+  date_to: MyString

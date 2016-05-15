@@ -1,0 +1,4 @@
+worker: RAILS_ENV=production DYNAMIC_SCHEDULE=true rake resque:work
+worker: RAILS_ENV=production DYNAMIC_SCHEDULE=true rake resque:work
+worker: RAILS_ENV=production DYNAMIC_SCHEDULE=true rake resque:work
+web: /usr/local/rbenv/versions/2.3.0/bin/ruby -e '$stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)' /vagrant/bin/rails server -b 0.0.0.0 -p 3000 -e development
