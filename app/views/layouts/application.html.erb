@@ -37,7 +37,7 @@
       <div class='collapse navbar-collapse target'>
         <ul class='nav navbar-nav navbar-right'>
           <li class='navbar-text' ><%= "[@#{current_user.user_name}でログイン中]" %></li>
-          <li><%= link_to '履歴', tasklog_path %></li>
+          <li><%= link_to '履歴', logs_path %></li>
           <li><%= link_to 'ログアウト', logout_path, method: :delete %></li>
         </ul>
       <div>

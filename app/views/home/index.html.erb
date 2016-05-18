@@ -1,9 +1,5 @@
       <h1>Twitterのいいね❤を消すやつ</h1>
-      <% if current_user %>
       <h2><%= link_to '今すぐ❤️を消す', new_task_path %></h2>
-      <% else %>
-      <h2><%= link_to '今すぐ❤を消す', '/auth/twitter' %></h2>
-      <% end %>
 
       <div class="alert alert-info" style="margin-top: 15%;">
         <ul class="list-group">

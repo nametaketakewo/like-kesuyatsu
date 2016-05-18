@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
   root 'home#index'
-  get 'log', to: 'tasks#log', as: :tasklog
-  get 'tasks', to: 'tasks#index', as: :tasks
+  get 'log', to: 'tasks#log', as: :logs
   get 'delete', to: 'tasks#new', as: :new_task
   post 'delete', to: 'tasks#create', as: :create_task
   delete 'cancel', to: 'tasks#destroy', as: :cancel
-  get 'progress', to: 'tasks#show', as: :progress
+  get 'progress', to: 'tasks#progress', as: :progress
   get '/auth/:provider/callback', to: 'sessions#callback'
   post '/auth/:provider/callback', to: 'sessions#callback'
   delete '/logout', to: 'sessions#destroy', as: :logout
